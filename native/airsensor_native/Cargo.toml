@@ -1,0 +1,15 @@
+[package]
+name = "airsensor_native"
+version = "0.1.0"
+authors = []
+edition = "2021"
+
+[lib]
+name = "airsensor_native"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+rustler = "0.34.0"
+aranet4 = "0.1.0"
+tokio = { version = "1.39.0", features = ["rt", "rt-multi-thread"] }
